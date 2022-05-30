@@ -40,7 +40,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe.only("3 - Escreva uma query que exiba os valores da coluna que contém a primary key da tabela 'products'", () => {
+  describe("3 - Escreva uma query que exiba os valores da coluna que contém a primary key da tabela 'products'", () => {
     it('Verifica o desafio3', async () => {
       const challengeQuery = readFileSync('desafio3.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult3');
@@ -49,7 +49,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe("4 - Conte quantos registros existem na coluna 'product_name' da tabela 'products'", () => {
+  describe.only("4 - Conte quantos registros existem na coluna 'product_name' da tabela 'products'", () => {
     it('Verifica o desafio4', async () => {
       const challengeQuery = readFileSync('desafio4.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult4');
