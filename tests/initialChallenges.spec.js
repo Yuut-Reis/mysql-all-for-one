@@ -49,7 +49,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe.only("4 - Conte quantos registros existem na coluna 'product_name' da tabela 'products'", () => {
+  describe("4 - Conte quantos registros existem na coluna 'product_name' da tabela 'products'", () => {
     it('Verifica o desafio4', async () => {
       const challengeQuery = readFileSync('desafio4.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult4');
@@ -58,7 +58,7 @@ describe('Desafios iniciais', () => {
     });
   });
 
-  describe("5 - Monte uma query que exiba os dados da tabela 'products' a partir do quarto registro até o décimo terceiro", () => {
+  describe.only("5 - Monte uma query que exiba os dados da tabela 'products' a partir do quarto registro até o décimo terceiro", () => {
     it('Verifica o desafio5', async () => {
       const challengeQuery = readFileSync('desafio5.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult5');
