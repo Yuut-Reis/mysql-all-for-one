@@ -42,7 +42,7 @@ describe('Desafios sobre filtragem de dados', () => {
     });
   });
 
-  describe.only("11 - Exiba os dados da coluna 'notes' da tabela 'purchase_orders' em que seu valor de 'Purchase generated based on Order' é maior ou igual a 30 e menor ou igual a 39", () => {
+  describe("11 - Exiba os dados da coluna 'notes' da tabela 'purchase_orders' em que seu valor de 'Purchase generated based on Order' é maior ou igual a 30 e menor ou igual a 39", () => {
     it('Verifica o desafio11', async () => {
       const challengeQuery = readFileSync('desafio11.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult11');
@@ -51,7 +51,7 @@ describe('Desafios sobre filtragem de dados', () => {
     });
   });
 
-  describe("12 - Mostre os resultados da coluna 'submitted_date' da tabela 'purchase_orders' em que a 'submitted_date' é do dia 26 de abril de 2006", () => {
+  describe.only("12 - Mostre os resultados da coluna 'submitted_date' da tabela 'purchase_orders' em que a 'submitted_date' é do dia 26 de abril de 2006", () => {
     it('Verifica o desafio12', async () => {
       const challengeQuery = readFileSync('desafio12.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult12');
