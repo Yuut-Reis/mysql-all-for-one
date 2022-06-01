@@ -109,7 +109,7 @@ describe('Desafios sobre filtragem de dados', () => {
     });
   });
 
-  describe.only("18 - Mostre todos os registros da tabela 'purchase_orders' que tem o valor na coluna 'supplier_id' igual a 3 e o valor na coluna 'status_id' igual a 2", () => {
+  describe("18 - Mostre todos os registros da tabela 'purchase_orders' que tem o valor na coluna 'supplier_id' igual a 3 e o valor na coluna 'status_id' igual a 2", () => {
     it('Verifica o desafio18', async () => {
       const challengeQuery = readFileSync('desafio18.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult18');
@@ -120,7 +120,7 @@ describe('Desafios sobre filtragem de dados', () => {
     });
   });
 
-  describe("19 - Mostre a quantidade de pedidos que foram feitos na tabela 'orders' pelo 'employee_id' igual a 5 ou 6, e que foram enviados através do método coluna 'shipper_id' igual a 2", () => {
+  describe.only("19 - Mostre a quantidade de pedidos que foram feitos na tabela 'orders' pelo 'employee_id' igual a 5 ou 6, e que foram enviados através do método coluna 'shipper_id' igual a 2", () => {
     it('Verifica o desafio19', async () => {
       const challengeQuery = readFileSync('desafio19.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult19');
