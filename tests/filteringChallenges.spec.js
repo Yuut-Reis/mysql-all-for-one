@@ -89,7 +89,7 @@ describe('Desafios sobre filtragem de dados', () => {
     });
   });
 
-  describe.only("16 - Exiba os resultados da coluna 'submitted_date' da tabela 'purchase_orders' que estão entre '2006-01-26 00:00:00' e '2006-03-31 23:59:59'", () => {
+  describe("16 - Exiba os resultados da coluna 'submitted_date' da tabela 'purchase_orders' que estão entre '2006-01-26 00:00:00' e '2006-03-31 23:59:59'", () => {
     it('Verifica o desafio16', async () => {
       const challengeQuery = readFileSync('desafio16.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult16');
@@ -100,7 +100,7 @@ describe('Desafios sobre filtragem de dados', () => {
     });
   });
 
-  describe("17 - Mostre os registros das colunas 'id' e 'supplier_id' da tabela 'purchase_orders' em que os 'supplier_id' sejam tanto 1, ou 3, ou 5, ou 7", () => {
+  describe.only("17 - Mostre os registros das colunas 'id' e 'supplier_id' da tabela 'purchase_orders' em que os 'supplier_id' sejam tanto 1, ou 3, ou 5, ou 7", () => {
     it('Verifica o desafio17', async () => {
       const challengeQuery = readFileSync('desafio17.sql', 'utf8').trim();
       const expectedResult = require('./challengesResults/challengeResult17');
